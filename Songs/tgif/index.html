@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Friday Night (T.G.I.F.) </title>
+    <link rel="stylesheet" href="/CSS/1couch/style.css">
+    <link rel="stylesheet" href="/CSS/1couch/animation.css">
+    <link rel="stylesheet" href="/CSS/1couch/video.css">
+    <link rel="stylesheet" href="/CSS/universal.css">
+    <link rel="stylesheet" href="CSS/color.css">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+    <audio id="bg-sound" loop mute autoplay>
+        <source src="soundtrack.ogg">
+    </audio>
+
+    <audio id="bg-2-sound" loop mute>
+        <source src="/endsound.mp3">
+    </audio>
+
+	<section class="container-vdo">
+        <section id="videoctn">
+
+
+
+
+            <section class="video-container-vdo" id="playbackctn" style="display: none">
+                <video class="playback" id="playback" src="https://archive.org/download/jd4_20220315/videoplayback%20%283%29.mp4" preload="auto" mute></video>
+                <!-- plantilla -->
+                <!-- <img class="template" src="./back.webp" alt=""> -->
+            </section>
+
+            <section class="video-container-vdo" id="introctn" style="display: none">
+                <video class="intro" id="intro" src="/intro.mp4" preload="auto" muted></video>
+            </section>
+
+            <section class="video-container-vdo" id="outroctn" style="display: none">
+                <video class="outro" id="outro" src="/outro.mp4" preload="auto" muted></video>
+            </section>
+
+            <section class="video-container-vdo gold-sect" id="goldctn" style="display: none">
+                <video class="gold" id="gold" src="/Gold.webm" preload="auto" muted></video>
+            </section>
+
+        </section>
+
+
+        <section id="hud" class="hidden_hud hud-container-sct">
+            <div class="hud-container">
+                <div class="hud">
+                    <div class="line">
+                        <svg viewBox="0 0 24 24"><path d="M23.677 18.52c.914 1.523-.183 3.472-1.967 3.472h-19.414c-1.784 0-2.881-1.949-1.967-3.472l9.709-16.18c.891-1.483 3.041-1.48 3.93 0l9.709 16.18z"/></svg>
+                    </div>
+                    <div class="beat" id="Beatline">
+                    </div>
+                    <div class="pictograms">
+                        <ul id="listapicto" style="display: none;">
+                            <div id="pct000" class="imgpictocl"><img src="Pictograms/000.png" alt=""></div>
+                            <div id="pct001" class="imgpictocl"><img src="Pictograms/001.png" alt=""></div>
+                            <div id="pct002" class="imgpictocl"><img src="Pictograms/002.png" alt=""></div>
+                            <div id="pct003" class="imgpictocl"><img src="Pictograms/003.png" alt=""></div>
+                            <div id="pct004" class="imgpictocl"><img src="Pictograms/004.png" alt=""></div>
+                            <div id="pct005" class="imgpictocl"><img src="Pictograms/005.png" alt=""></div>
+                            <div id="pct006" class="imgpictocl"><img src="Pictograms/006.png" alt=""></div>
+                            <div id="pct007" class="imgpictocl"><img src="Pictograms/007.png" alt=""></div>
+                            <div id="pct008" class="imgpictocl"><img src="Pictograms/008.png" alt=""></div>
+                            <div id="pct009" class="imgpictocl"><img src="Pictograms/009.png" alt=""></div>
+                            <div id="pct010" class="imgpictocl"><img src="Pictograms/010.png" alt=""></div>
+                            <div id="pct011" class="imgpictocl"><img src="Pictograms/011.png" alt=""></div>
+                            <div id="pct012" class="imgpictocl"><img src="Pictograms/012.png" alt=""></div>
+                            <div id="pct013" class="imgpictocl"><img src="Pictograms/013.png" alt=""></div>
+                            <div id="pct014" class="imgpictocl"><img src="Pictograms/014.png" alt=""></div>
+                            <div id="pct015" class="imgpictocl"><img src="Pictograms/015.png" alt=""></div>
+                            <div id="pct016" class="imgpictocl"><img src="Pictograms/016.png" alt=""></div>
+                            <div id="pct017" class="imgpictocl"><img src="Pictograms/017.png" alt=""></div>
+                            <div id="pct018" class="imgpictocl"><img src="Pictograms/018.png" alt=""></div>
+                            <div id="pct019" class="imgpictocl"><img src="Pictograms/019.png" alt=""></div>
+                            <div id="pct020" class="imgpictocl"><img src="Pictograms/020.png" alt=""></div>
+                            <div id="pct021" class="imgpictocl"><img src="Pictograms/021.png" alt=""></div>
+                            <div id="pct022" class="imgpictocl"><img src="Pictograms/022.png" alt=""></div>
+                            <div id="pct023" class="imgpictocl"><img src="Pictograms/023.png" alt=""></div>
+                            <div id="pct024" class="imgpictocl"><img src="Pictograms/024.png" alt=""></div>
+                            <div id="pct025" class="imgpictocl"><img src="Pictograms/025.png" alt=""></div>
+                            <div id="pct026" class="imgpictocl"><img src="Pictograms/026.png" alt=""></div>
+                            <div id="pct027" class="imgpictocl"><img src="Pictograms/027.png" alt=""></div>
+                            <div id="pct028" class="imgpictocl"><img src="Pictograms/028.png" alt=""></div>
+                            <div id="pct029" class="imgpictocl"><img src="Pictograms/029.png" alt=""></div>
+                            <div id="pct030" class="imgpictocl"><img src="Pictograms/030.png" alt=""></div>
+                            <div id="pct031" class="imgpictocl"><img src="Pictograms/031.png" alt=""></div>
+                            <div id="pct032" class="imgpictocl"><img src="Pictograms/032.png" alt=""></div>
+                            <div id="pct033" class="imgpictocl"><img src="Pictograms/033.png" alt=""></div>
+                            <div id="pct034" class="imgpictocl"><img src="Pictograms/034.png" alt=""></div>
+                            <div id="pct035" class="imgpictocl"><img src="Pictograms/035.png" alt=""></div>
+                            <div id="pct036" class="imgpictocl"><img src="Pictograms/036.png" alt=""></div>
+                            <div id="pct037" class="imgpictocl"><img src="Pictograms/037.png" alt=""></div>
+                            <div id="pct038" class="imgpictocl"><img src="Pictograms/038.png" alt=""></div>
+                            <div id="pct039" class="imgpictocl"><img src="Pictograms/039.png" alt=""></div>
+                            <div id="pct040" class="imgpictocl"><img src="Pictograms/040.png" alt=""></div>
+                            <div id="pct041" class="imgpictocl"><img src="Pictograms/041.png" alt=""></div>
+                            <div id="pct042" class="imgpictocl"><img src="Pictograms/042.png" alt=""></div>
+                            <div id="pct043" class="imgpictocl"><img src="Pictograms/043.png" alt=""></div>
+                            <div id="pct044" class="imgpictocl"><img src="Pictograms/044.png" alt=""></div>
+                            <div id="pct045" class="imgpictocl"><img src="Pictograms/045.png" alt=""></div>
+                            <div id="pct046" class="imgpictocl"><img src="Pictograms/046.png" alt=""></div>
+                            <div id="pct047" class="imgpictocl"><img src="Pictograms/047.png" alt=""></div>
+                            <div id="pct048" class="imgpictocl"><img src="Pictograms/048.png" alt=""></div>
+                            <div id="pct049" class="imgpictocl"><img src="Pictograms/049.png" alt=""></div>
+                            <div id="pct050" class="imgpictocl"><img src="Pictograms/040.png" alt=""></div>
+                            <div id="pct051" class="imgpictocl"><img src="Pictograms/051.png" alt=""></div>
+                            <div id="pct052" class="imgpictocl"><img src="Pictograms/052.png" alt=""></div>
+                            <div id="pct053" class="imgpictocl"><img src="Pictograms/053.png" alt=""></div>
+                            <div id="pct054" class="imgpictocl"><img src="Pictograms/054.png" alt=""></div>
+                            <div id="pct055" class="imgpictocl"><img src="Pictograms/055.png" alt=""></div>
+                            <div id="pct056" class="imgpictocl"><img src="Pictograms/056.png" alt=""></div>
+                            <div id="pct057" class="imgpictocl"><img src="Pictograms/057.png" alt=""></div>
+                            <div id="pct058" class="imgpictocl"><img src="Pictograms/058.png" alt=""></div>
+                            <div id="pct059" class="imgpictocl"><img src="Pictograms/059.png" alt=""></div>
+                            <div id="pct060" class="imgpictocl"><img src="Pictograms/060.png" alt=""></div>
+                            <div id="pct061" class="imgpictocl"><img src="Pictograms/061.png" alt=""></div>
+                            <div id="pct062" class="imgpictocl"><img src="Pictograms/062.png" alt=""></div>
+                            <div id="pct063" class="imgpictocl"><img src="Pictograms/063.png" alt=""></div>
+                            <div id="pct064" class="imgpictocl"><img src="Pictograms/064.png" alt=""></div>
+                            <div id="pct065" class="imgpictocl"><img src="Pictograms/065.png" alt=""></div>
+                            <div id="pct066" class="imgpictocl"><img src="Pictograms/066.png" alt=""></div>
+                            <div id="pct067" class="imgpictocl"><img src="Pictograms/067.png" alt=""></div>
+                            <div id="pct068" class="imgpictocl"><img src="Pictograms/068.png" alt=""></div>
+                            <div id="pct069" class="imgpictocl"><img src="Pictograms/069.png" alt=""></div>
+                            <div id="pct070" class="imgpictocl"><img src="Pictograms/070.png" alt=""></div>
+                            <div id="pct071" class="imgpictocl"><img src="Pictograms/071.png" alt=""></div>
+                            <div id="pct072" class="imgpictocl"><img src="Pictograms/072.png" alt=""></div>
+                            <div id="pct073" class="imgpictocl"><img src="Pictograms/073.png" alt=""></div>
+                            <div id="pct074" class="imgpictocl"><img src="Pictograms/074.png" alt=""></div>
+                            <div id="pct075" class="imgpictocl"><img src="Pictograms/075.png" alt=""></div>
+                            <div id="pct076" class="imgpictocl"><img src="Pictograms/076.png" alt=""></div>
+                            <div id="pct077" class="imgpictocl"><img src="Pictograms/077.png" alt=""></div>
+                            <div id="pct078" class="imgpictocl"><img src="Pictograms/078.png" alt=""></div>
+                            <div id="pct079" class="imgpictocl"><img src="Pictograms/079.png" alt=""></div>
+                            <div id="pct080" class="imgpictocl"><img src="Pictograms/080.png" alt=""></div>
+                            <div id="pct081" class="imgpictocl"><img src="Pictograms/081.png" alt=""></div>
+                            <div id="pct082" class="imgpictocl"><img src="Pictograms/082.png" alt=""></div>
+                            <div id="pct083" class="imgpictocl"><img src="Pictograms/083.png" alt=""></div>
+                            <div id="pct084" class="imgpictocl"><img src="Pictograms/084.png" alt=""></div>
+                            <div id="pct085" class="imgpictocl"><img src="Pictograms/085.png" alt=""></div>
+                            <div id="pct086" class="imgpictocl"><img src="Pictograms/086.png" alt=""></div>
+                            <div id="pct087" class="imgpictocl"><img src="Pictograms/087.png" alt=""></div>
+                            <div id="pct088" class="imgpictocl"><img src="Pictograms/088.png" alt=""></div>
+                            <div id="pct089" class="imgpictocl"><img src="Pictograms/089.png" alt=""></div>
+                            <div id="pct090" class="imgpictocl"><img src="Pictograms/090.png" alt=""></div>
+                            <div id="pct091" class="imgpictocl"><img src="Pictograms/091.png" alt=""></div>
+                            <div id="pct092" class="imgpictocl"><img src="Pictograms/092.png" alt=""></div>
+                            <div id="pct093" class="imgpictocl"><img src="Pictograms/093.png" alt=""></div>
+                            <div id="pct094" class="imgpictocl"><img src="Pictograms/094.png" alt=""></div>
+                            <div id="pct095" class="imgpictocl"><img src="Pictograms/095.png" alt=""></div>
+                            <div id="pct096" class="imgpictocl"><img src="Pictograms/096.png" alt=""></div>
+                            <div id="pct097" class="imgpictocl"><img src="Pictograms/097.png" alt=""></div>
+                            <div id="pct098" class="imgpictocl"><img src="Pictograms/098.png" alt=""></div>
+                            <div id="pct099" class="imgpictocl"><img src="Pictograms/099.png" alt=""></div>
+                            <div id="pct100" class="imgpictocl"><img src="Pictograms/100.png" alt=""></div>
+                            <div id="pct101" class="imgpictocl"><img src="Pictograms/101.png" alt=""></div>
+                            <div id="pct102" class="imgpictocl"><img src="Pictograms/102.png" alt=""></div>
+                            <div id="pct103" class="imgpictocl"><img src="Pictograms/103.png" alt=""></div>
+                            <div id="pct104" class="imgpictocl"><img src="Pictograms/104.png" alt=""></div>
+                            <div id="pct105" class="imgpictocl"><img src="Pictograms/105.png" alt=""></div>
+                            <div id="pct106" class="imgpictocl"><img src="Pictograms/106.png" alt=""></div>
+                            <div id="pct107" class="imgpictocl"><img src="Pictograms/107.png" alt=""></div>
+                            <div id="pct108" class="imgpictocl"><img src="Pictograms/108.png" alt=""></div>
+                            <div id="pct109" class="imgpictocl"><img src="Pictograms/109.png" alt=""></div>
+                            <div id="pct110" class="imgpictocl"><img src="Pictograms/110.png" alt=""></div>
+                            <div id="pct111" class="imgpictocl"><img src="Pictograms/111.png" alt=""></div>
+                            <div id="pct112" class="imgpictocl"><img src="Pictograms/112.png" alt=""></div>
+                            <div id="pct113" class="imgpictocl"><img src="Pictograms/113.png" alt=""></div>
+                            <div id="pct114" class="imgpictocl"><img src="Pictograms/114.png" alt=""></div>
+                            <div id="pct115" class="imgpictocl"><img src="Pictograms/115.png" alt=""></div>
+                            <div id="pct116" class="imgpictocl"><img src="Pictograms/116.png" alt=""></div>
+                            <div id="pct117" class="imgpictocl"><img src="Pictograms/117.png" alt=""></div>
+                            <div id="pct118" class="imgpictocl"><img src="Pictograms/118.png" alt=""></div>
+                            <div id="pct119" class="imgpictocl"><img src="Pictograms/119.png" alt=""></div>
+                            <div id="pct120" class="imgpictocl"><img src="Pictograms/120.png" alt=""></div>
+                            <div id="pct121" class="imgpictocl"><img src="Pictograms/121.png" alt=""></div>
+                            <div id="pct122" class="imgpictocl"><img src="Pictograms/122.png" alt=""></div>
+                            <div id="pct123" class="imgpictocl"><img src="Pictograms/123.png" alt=""></div>
+                            <div id="pct124" class="imgpictocl"><img src="Pictograms/124.png" alt=""></div>
+                            <div id="pct125" class="imgpictocl"><img src="Pictograms/125.png" alt=""></div>
+                            <div id="pct126" class="imgpictocl"><img src="Pictograms/126.png" alt=""></div>
+                            <div id="pct127" class="imgpictocl"><img src="Pictograms/127.png" alt=""></div>
+                            <div id="pct128" class="imgpictocl"><img src="Pictograms/128.png" alt=""></div>
+                            <div id="pct129" class="imgpictocl"><img src="Pictograms/129.png" alt=""></div>
+                            <div id="pct130" class="imgpictocl"><img src="Pictograms/130.png" alt=""></div>
+                            <div id="pct131" class="imgpictocl"><img src="Pictograms/131.png" alt=""></div>
+                            <div id="pct132" class="imgpictocl"><img src="Pictograms/132.png" alt=""></div>
+                            <div id="pct133" class="imgpictocl"><img src="Pictograms/133.png" alt=""></div>
+                            <div id="pct134" class="imgpictocl"><img src="Pictograms/134.png" alt=""></div>
+                            <div id="pct135" class="imgpictocl"><img src="Pictograms/135.png" alt=""></div>
+                            <div id="pct136" class="imgpictocl"><img src="Pictograms/136.png" alt=""></div>
+                            <div id="pct137" class="imgpictocl"><img src="Pictograms/137.png" alt=""></div>
+                            <div id="pct138" class="imgpictocl"><img src="Pictograms/138.png" alt=""></div>
+                            <div id="pct139" class="imgpictocl"><img src="Pictograms/139.png" alt=""></div>
+                            <div id="pct140" class="imgpictocl"><img src="Pictograms/140.png" alt=""></div>
+                            <div id="pct141" class="imgpictocl"><img src="Pictograms/141.png" alt=""></div>
+                            <div id="pct142" class="imgpictocl"><img src="Pictograms/142.png" alt=""></div>
+                            <div id="pct143" class="imgpictocl"><img src="Pictograms/143.png" alt=""></div>
+                            <div id="pct144" class="imgpictocl"><img src="Pictograms/144.png" alt=""></div>
+                            <div id="pct145" class="imgpictocl"><img src="Pictograms/145.png" alt=""></div>
+                            <div id="pct146" class="imgpictocl"><img src="Pictograms/146.png" alt=""></div>
+                            <div id="pct147" class="imgpictocl"><img src="Pictograms/147.png" alt=""></div>
+                            <div id="pct148" class="imgpictocl"><img src="Pictograms/148.png" alt=""></div>
+                            <div id="pct149" class="imgpictocl"><img src="Pictograms/149.png" alt=""></div>
+                            <div id="pct150" class="imgpictocl"><img src="Pictograms/140.png" alt=""></div>
+                            <div id="pct151" class="imgpictocl"><img src="Pictograms/151.png" alt=""></div>
+                            <div id="pct152" class="imgpictocl"><img src="Pictograms/152.png" alt=""></div>
+                            <div id="pct153" class="imgpictocl"><img src="Pictograms/153.png" alt=""></div>
+                            <div id="pct154" class="imgpictocl"><img src="Pictograms/154.png" alt=""></div>
+                            <div id="pct155" class="imgpictocl"><img src="Pictograms/155.png" alt=""></div>
+                            <div id="pct156" class="imgpictocl"><img src="Pictograms/156.png" alt=""></div>
+                            <div id="pct157" class="imgpictocl"><img src="Pictograms/157.png" alt=""></div>
+                            <div id="pct158" class="imgpictocl"><img src="Pictograms/158.png" alt=""></div>
+                            <div id="pct159" class="imgpictocl"><img src="Pictograms/159.png" alt=""></div>
+                            <div id="pct160" class="imgpictocl"><img src="Pictograms/160.png" alt=""></div>
+                            <div id="pct161" class="imgpictocl"><img src="Pictograms/161.png" alt=""></div>
+                            <div id="pct162" class="imgpictocl"><img src="Pictograms/162.png" alt=""></div>
+                            <div id="pct163" class="imgpictocl"><img src="Pictograms/163.png" alt=""></div>
+                            <div id="pct164" class="imgpictocl"><img src="Pictograms/164.png" alt=""></div>
+                            <div id="pct165" class="imgpictocl"><img src="Pictograms/165.png" alt=""></div>
+                            <div id="pct166" class="imgpictocl"><img src="Pictograms/166.png" alt=""></div>
+                            <div id="pct167" class="imgpictocl"><img src="Pictograms/167.png" alt=""></div>
+                            <div id="pct168" class="imgpictocl"><img src="Pictograms/168.png" alt=""></div>
+                            <div id="pct169" class="imgpictocl"><img src="Pictograms/169.png" alt=""></div>
+                            <div id="pct170" class="imgpictocl"><img src="Pictograms/170.png" alt=""></div>
+                            <div id="pct171" class="imgpictocl"><img src="Pictograms/171.png" alt=""></div>
+                            <div id="pct172" class="imgpictocl"><img src="Pictograms/172.png" alt=""></div>
+                            <div id="pct173" class="imgpictocl"><img src="Pictograms/173.png" alt=""></div>
+                            <div id="pct174" class="imgpictocl"><img src="Pictograms/174.png" alt=""></div>
+                            <div id="pct175" class="imgpictocl"><img src="Pictograms/175.png" alt=""></div>
+                            <div id="pct176" class="imgpictocl"><img src="Pictograms/176.png" alt=""></div>
+                            <div id="pct177" class="imgpictocl"><img src="Pictograms/177.png" alt=""></div>
+                            <div id="pct178" class="imgpictocl"><img src="Pictograms/178.png" alt=""></div>
+                            <div id="pct179" class="imgpictocl"><img src="Pictograms/179.png" alt=""></div>
+                            <div id="pct180" class="imgpictocl"><img src="Pictograms/180.png" alt=""></div>
+                            <div id="pct181" class="imgpictocl"><img src="Pictograms/181.png" alt=""></div>
+                            <div id="pct182" class="imgpictocl"><img src="Pictograms/182.png" alt=""></div>
+                            <div id="pct183" class="imgpictocl"><img src="Pictograms/183.png" alt=""></div>
+                            <div id="pct184" class="imgpictocl"><img src="Pictograms/184.png" alt=""></div>
+                            <div id="pct185" class="imgpictocl"><img src="Pictograms/185.png" alt=""></div>
+                            <div id="pct186" class="imgpictocl"><img src="Pictograms/186.png" alt=""></div>
+                            <div id="pct187" class="imgpictocl"><img src="Pictograms/187.png" alt=""></div>
+                            <div id="pct188" class="imgpictocl"><img src="Pictograms/188.png" alt=""></div>
+                            <div id="pct189" class="imgpictocl"><img src="Pictograms/189.png" alt=""></div>
+                            <div id="pct190" class="imgpictocl"><img src="Pictograms/190.png" alt=""></div>
+                            <div id="pct191" class="imgpictocl"><img src="Pictograms/191.png" alt=""></div>
+                            <div id="pct192" class="imgpictocl"><img src="Pictograms/192.png" alt=""></div>
+                            <div id="pct193" class="imgpictocl"><img src="Pictograms/193.png" alt=""></div>
+                            <div id="pct194" class="imgpictocl"><img src="Pictograms/194.png" alt=""></div>
+                            <div id="pct195" class="imgpictocl"><img src="Pictograms/195.png" alt=""></div>
+                            <div id="pct196" class="imgpictocl"><img src="Pictograms/196.png" alt=""></div>
+                            <div id="pct197" class="imgpictocl"><img src="Pictograms/197.png" alt=""></div>
+                            <div id="pct198" class="imgpictocl"><img src="Pictograms/198.png" alt=""></div>
+                            <div id="pct199" class="imgpictocl"><img src="Pictograms/199.png" alt=""></div>
+
+
+                            <div id="pct000d" class="imgpictocl"><img src="Pictograms/000.png" alt=""></div>
+                            <div id="pct001d" class="imgpictocl"><img src="Pictograms/001.png" alt=""></div>
+                            <div id="pct002d" class="imgpictocl"><img src="Pictograms/002.png" alt=""></div>
+                            <div id="pct003d" class="imgpictocl"><img src="Pictograms/003.png" alt=""></div>
+                            <div id="pct004d" class="imgpictocl"><img src="Pictograms/004.png" alt=""></div>
+                            <div id="pct005d" class="imgpictocl"><img src="Pictograms/005.png" alt=""></div>
+                            <div id="pct006d" class="imgpictocl"><img src="Pictograms/006.png" alt=""></div>
+                            <div id="pct007d" class="imgpictocl"><img src="Pictograms/007.png" alt=""></div>
+                            <div id="pct008d" class="imgpictocl"><img src="Pictograms/008.png" alt=""></div>
+                            <div id="pct009d" class="imgpictocl"><img src="Pictograms/009.png" alt=""></div>
+                            <div id="pct010d" class="imgpictocl"><img src="Pictograms/010.png" alt=""></div>
+                            <div id="pct011d" class="imgpictocl"><img src="Pictograms/011.png" alt=""></div>
+                            <div id="pct012d" class="imgpictocl"><img src="Pictograms/012.png" alt=""></div>
+                            <div id="pct013d" class="imgpictocl"><img src="Pictograms/013.png" alt=""></div>
+                            <div id="pct014d" class="imgpictocl"><img src="Pictograms/014.png" alt=""></div>
+                            <div id="pct015d" class="imgpictocl"><img src="Pictograms/015.png" alt=""></div>
+                            <div id="pct016d" class="imgpictocl"><img src="Pictograms/016.png" alt=""></div>
+                            <div id="pct017d" class="imgpictocl"><img src="Pictograms/017.png" alt=""></div>
+                            <div id="pct018d" class="imgpictocl"><img src="Pictograms/018.png" alt=""></div>
+                            <div id="pct019d" class="imgpictocl"><img src="Pictograms/019.png" alt=""></div>
+                            <div id="pct020d" class="imgpictocl"><img src="Pictograms/020.png" alt=""></div>
+                            <div id="pct021d" class="imgpictocl"><img src="Pictograms/021.png" alt=""></div>
+                            <div id="pct022d" class="imgpictocl"><img src="Pictograms/022.png" alt=""></div>
+                            <div id="pct023d" class="imgpictocl"><img src="Pictograms/023.png" alt=""></div>
+                            <div id="pct024d" class="imgpictocl"><img src="Pictograms/024.png" alt=""></div>
+                            <div id="pct025d" class="imgpictocl"><img src="Pictograms/025.png" alt=""></div>
+                            <div id="pct026d" class="imgpictocl"><img src="Pictograms/026.png" alt=""></div>
+                            <div id="pct027d" class="imgpictocl"><img src="Pictograms/027.png" alt=""></div>
+                            <div id="pct028d" class="imgpictocl"><img src="Pictograms/028.png" alt=""></div>
+                            <div id="pct029d" class="imgpictocl"><img src="Pictograms/029.png" alt=""></div>
+                            <div id="pct030d" class="imgpictocl"><img src="Pictograms/030.png" alt=""></div>
+                            <div id="pct031d" class="imgpictocl"><img src="Pictograms/031.png" alt=""></div>
+                            <div id="pct032d" class="imgpictocl"><img src="Pictograms/032.png" alt=""></div>
+                            <div id="pct033d" class="imgpictocl"><img src="Pictograms/033.png" alt=""></div>
+                            <div id="pct034d" class="imgpictocl"><img src="Pictograms/034.png" alt=""></div>
+                            <div id="pct035d" class="imgpictocl"><img src="Pictograms/035.png" alt=""></div>
+                            <div id="pct036d" class="imgpictocl"><img src="Pictograms/036.png" alt=""></div>
+                            <div id="pct037d" class="imgpictocl"><img src="Pictograms/037.png" alt=""></div>
+                            <div id="pct038d" class="imgpictocl"><img src="Pictograms/038.png" alt=""></div>
+                            <div id="pct039d" class="imgpictocl"><img src="Pictograms/039.png" alt=""></div>
+                            <div id="pct040d" class="imgpictocl"><img src="Pictograms/040.png" alt=""></div>
+                            <div id="pct041d" class="imgpictocl"><img src="Pictograms/041.png" alt=""></div>
+                            <div id="pct042d" class="imgpictocl"><img src="Pictograms/042.png" alt=""></div>
+                            <div id="pct043d" class="imgpictocl"><img src="Pictograms/043.png" alt=""></div>
+                            <div id="pct044d" class="imgpictocl"><img src="Pictograms/044.png" alt=""></div>
+                            <div id="pct045d" class="imgpictocl"><img src="Pictograms/045.png" alt=""></div>
+                            <div id="pct046d" class="imgpictocl"><img src="Pictograms/046.png" alt=""></div>
+                            <div id="pct047d" class="imgpictocl"><img src="Pictograms/047.png" alt=""></div>
+                            <div id="pct048d" class="imgpictocl"><img src="Pictograms/048.png" alt=""></div>
+                            <div id="pct049d" class="imgpictocl"><img src="Pictograms/049.png" alt=""></div>
+                            <div id="pct050d" class="imgpictocl"><img src="Pictograms/040.png" alt=""></div>
+                            <div id="pct051d" class="imgpictocl"><img src="Pictograms/051.png" alt=""></div>
+                            <div id="pct052d" class="imgpictocl"><img src="Pictograms/052.png" alt=""></div>
+                            <div id="pct053d" class="imgpictocl"><img src="Pictograms/053.png" alt=""></div>
+                            <div id="pct054d" class="imgpictocl"><img src="Pictograms/054.png" alt=""></div>
+                            <div id="pct055d" class="imgpictocl"><img src="Pictograms/055.png" alt=""></div>
+                            <div id="pct056d" class="imgpictocl"><img src="Pictograms/056.png" alt=""></div>
+                            <div id="pct057d" class="imgpictocl"><img src="Pictograms/057.png" alt=""></div>
+                            <div id="pct058d" class="imgpictocl"><img src="Pictograms/058.png" alt=""></div>
+                            <div id="pct059d" class="imgpictocl"><img src="Pictograms/059.png" alt=""></div>
+                            <div id="pct060d" class="imgpictocl"><img src="Pictograms/060.png" alt=""></div>
+                            <div id="pct061d" class="imgpictocl"><img src="Pictograms/061.png" alt=""></div>
+                            <div id="pct062d" class="imgpictocl"><img src="Pictograms/062.png" alt=""></div>
+                            <div id="pct063d" class="imgpictocl"><img src="Pictograms/063.png" alt=""></div>
+                            <div id="pct064d" class="imgpictocl"><img src="Pictograms/064.png" alt=""></div>
+                            <div id="pct065d" class="imgpictocl"><img src="Pictograms/065.png" alt=""></div>
+                            <div id="pct066d" class="imgpictocl"><img src="Pictograms/066.png" alt=""></div>
+                            <div id="pct067d" class="imgpictocl"><img src="Pictograms/067.png" alt=""></div>
+                            <div id="pct068d" class="imgpictocl"><img src="Pictograms/068.png" alt=""></div>
+                            <div id="pct069d" class="imgpictocl"><img src="Pictograms/069.png" alt=""></div>
+                            <div id="pct070d" class="imgpictocl"><img src="Pictograms/070.png" alt=""></div>
+                            <div id="pct071d" class="imgpictocl"><img src="Pictograms/071.png" alt=""></div>
+                            <div id="pct072d" class="imgpictocl"><img src="Pictograms/072.png" alt=""></div>
+                            <div id="pct073d" class="imgpictocl"><img src="Pictograms/073.png" alt=""></div>
+                            <div id="pct074d" class="imgpictocl"><img src="Pictograms/074.png" alt=""></div>
+                            <div id="pct075d" class="imgpictocl"><img src="Pictograms/075.png" alt=""></div>
+                            <div id="pct076d" class="imgpictocl"><img src="Pictograms/076.png" alt=""></div>
+                            <div id="pct077d" class="imgpictocl"><img src="Pictograms/077.png" alt=""></div>
+                            <div id="pct078d" class="imgpictocl"><img src="Pictograms/078.png" alt=""></div>
+                            <div id="pct079d" class="imgpictocl"><img src="Pictograms/079.png" alt=""></div>
+                            <div id="pct080d" class="imgpictocl"><img src="Pictograms/080.png" alt=""></div>
+                            <div id="pct081d" class="imgpictocl"><img src="Pictograms/081.png" alt=""></div>
+                            <div id="pct082d" class="imgpictocl"><img src="Pictograms/082.png" alt=""></div>
+                            <div id="pct083d" class="imgpictocl"><img src="Pictograms/083.png" alt=""></div>
+                            <div id="pct084d" class="imgpictocl"><img src="Pictograms/084.png" alt=""></div>
+                            <div id="pct085d" class="imgpictocl"><img src="Pictograms/085.png" alt=""></div>
+                            <div id="pct086d" class="imgpictocl"><img src="Pictograms/086.png" alt=""></div>
+                            <div id="pct087d" class="imgpictocl"><img src="Pictograms/087.png" alt=""></div>
+                            <div id="pct088d" class="imgpictocl"><img src="Pictograms/088.png" alt=""></div>
+                            <div id="pct089d" class="imgpictocl"><img src="Pictograms/089.png" alt=""></div>
+                            <div id="pct090d" class="imgpictocl"><img src="Pictograms/090.png" alt=""></div>
+                            <div id="pct091d" class="imgpictocl"><img src="Pictograms/091.png" alt=""></div>
+                            <div id="pct092d" class="imgpictocl"><img src="Pictograms/092.png" alt=""></div>
+                            <div id="pct093d" class="imgpictocl"><img src="Pictograms/093.png" alt=""></div>
+                            <div id="pct094d" class="imgpictocl"><img src="Pictograms/094.png" alt=""></div>
+                            <div id="pct095d" class="imgpictocl"><img src="Pictograms/095.png" alt=""></div>
+                            <div id="pct096d" class="imgpictocl"><img src="Pictograms/096.png" alt=""></div>
+                            <div id="pct097d" class="imgpictocl"><img src="Pictograms/097.png" alt=""></div>
+                            <div id="pct098d" class="imgpictocl"><img src="Pictograms/098.png" alt=""></div>
+                            <div id="pct099d" class="imgpictocl"><img src="Pictograms/099.png" alt=""></div>
+                            <div id="pct100d" class="imgpictocl"><img src="Pictograms/100.png" alt=""></div>
+                            <div id="pct101d" class="imgpictocl"><img src="Pictograms/101.png" alt=""></div>
+                            <div id="pct102d" class="imgpictocl"><img src="Pictograms/102.png" alt=""></div>
+                            <div id="pct103d" class="imgpictocl"><img src="Pictograms/103.png" alt=""></div>
+                            <div id="pct104d" class="imgpictocl"><img src="Pictograms/104.png" alt=""></div>
+                            <div id="pct105d" class="imgpictocl"><img src="Pictograms/105.png" alt=""></div>
+                            <div id="pct106d" class="imgpictocl"><img src="Pictograms/106.png" alt=""></div>
+                            <div id="pct107d" class="imgpictocl"><img src="Pictograms/107.png" alt=""></div>
+                            <div id="pct108d" class="imgpictocl"><img src="Pictograms/108.png" alt=""></div>
+                            <div id="pct109d" class="imgpictocl"><img src="Pictograms/109.png" alt=""></div>
+                            <div id="pct110d" class="imgpictocl"><img src="Pictograms/110.png" alt=""></div>
+                            <div id="pct111d" class="imgpictocl"><img src="Pictograms/111.png" alt=""></div>
+                            <div id="pct112d" class="imgpictocl"><img src="Pictograms/112.png" alt=""></div>
+                            <div id="pct113d" class="imgpictocl"><img src="Pictograms/113.png" alt=""></div>
+                            <div id="pct114d" class="imgpictocl"><img src="Pictograms/114.png" alt=""></div>
+                            <div id="pct115d" class="imgpictocl"><img src="Pictograms/115.png" alt=""></div>
+                            <div id="pct116d" class="imgpictocl"><img src="Pictograms/116.png" alt=""></div>
+                            <div id="pct117d" class="imgpictocl"><img src="Pictograms/117.png" alt=""></div>
+                            <div id="pct118d" class="imgpictocl"><img src="Pictograms/118.png" alt=""></div>
+                            <div id="pct119d" class="imgpictocl"><img src="Pictograms/119.png" alt=""></div>
+                            <div id="pct120d" class="imgpictocl"><img src="Pictograms/120.png" alt=""></div>
+                            <div id="pct121d" class="imgpictocl"><img src="Pictograms/121.png" alt=""></div>
+                            <div id="pct122d" class="imgpictocl"><img src="Pictograms/122.png" alt=""></div>
+                            <div id="pct123d" class="imgpictocl"><img src="Pictograms/123.png" alt=""></div>
+                            <div id="pct124d" class="imgpictocl"><img src="Pictograms/124.png" alt=""></div>
+                            <div id="pct125d" class="imgpictocl"><img src="Pictograms/125.png" alt=""></div>
+                            <div id="pct126d" class="imgpictocl"><img src="Pictograms/126.png" alt=""></div>
+                            <div id="pct127d" class="imgpictocl"><img src="Pictograms/127.png" alt=""></div>
+                            <div id="pct128d" class="imgpictocl"><img src="Pictograms/128.png" alt=""></div>
+                            <div id="pct129d" class="imgpictocl"><img src="Pictograms/129.png" alt=""></div>
+                            <div id="pct130d" class="imgpictocl"><img src="Pictograms/130.png" alt=""></div>
+                            <div id="pct131d" class="imgpictocl"><img src="Pictograms/131.png" alt=""></div>
+                            <div id="pct132d" class="imgpictocl"><img src="Pictograms/132.png" alt=""></div>
+                            <div id="pct133d" class="imgpictocl"><img src="Pictograms/133.png" alt=""></div>
+                            <div id="pct134d" class="imgpictocl"><img src="Pictograms/134.png" alt=""></div>
+                            <div id="pct135d" class="imgpictocl"><img src="Pictograms/135.png" alt=""></div>
+                            <div id="pct136d" class="imgpictocl"><img src="Pictograms/136.png" alt=""></div>
+                            <div id="pct137d" class="imgpictocl"><img src="Pictograms/137.png" alt=""></div>
+                            <div id="pct138d" class="imgpictocl"><img src="Pictograms/138.png" alt=""></div>
+                            <div id="pct139d" class="imgpictocl"><img src="Pictograms/139.png" alt=""></div>
+                            <div id="pct140d" class="imgpictocl"><img src="Pictograms/140.png" alt=""></div>
+                            <div id="pct141d" class="imgpictocl"><img src="Pictograms/141.png" alt=""></div>
+                            <div id="pct142d" class="imgpictocl"><img src="Pictograms/142.png" alt=""></div>
+                            <div id="pct143d" class="imgpictocl"><img src="Pictograms/143.png" alt=""></div>
+                            <div id="pct144d" class="imgpictocl"><img src="Pictograms/144.png" alt=""></div>
+                            <div id="pct145d" class="imgpictocl"><img src="Pictograms/145.png" alt=""></div>
+                            <div id="pct146d" class="imgpictocl"><img src="Pictograms/146.png" alt=""></div>
+                            <div id="pct147d" class="imgpictocl"><img src="Pictograms/147.png" alt=""></div>
+                            <div id="pct148d" class="imgpictocl"><img src="Pictograms/148.png" alt=""></div>
+                            <div id="pct149d" class="imgpictocl"><img src="Pictograms/149.png" alt=""></div>
+                            <div id="pct150d" class="imgpictocl"><img src="Pictograms/140.png" alt=""></div>
+                            <div id="pct151d" class="imgpictocl"><img src="Pictograms/151.png" alt=""></div>
+                            <div id="pct152d" class="imgpictocl"><img src="Pictograms/152.png" alt=""></div>
+                            <div id="pct153d" class="imgpictocl"><img src="Pictograms/153.png" alt=""></div>
+                            <div id="pct154d" class="imgpictocl"><img src="Pictograms/154.png" alt=""></div>
+                            <div id="pct155d" class="imgpictocl"><img src="Pictograms/155.png" alt=""></div>
+                            <div id="pct156d" class="imgpictocl"><img src="Pictograms/156.png" alt=""></div>
+                            <div id="pct157d" class="imgpictocl"><img src="Pictograms/157.png" alt=""></div>
+                            <div id="pct158d" class="imgpictocl"><img src="Pictograms/158.png" alt=""></div>
+                            <div id="pct159d" class="imgpictocl"><img src="Pictograms/159.png" alt=""></div>
+                            <div id="pct160d" class="imgpictocl"><img src="Pictograms/160.png" alt=""></div>
+                            <div id="pct161d" class="imgpictocl"><img src="Pictograms/161.png" alt=""></div>
+                            <div id="pct162d" class="imgpictocl"><img src="Pictograms/162.png" alt=""></div>
+                            <div id="pct163d" class="imgpictocl"><img src="Pictograms/163.png" alt=""></div>
+                            <div id="pct164d" class="imgpictocl"><img src="Pictograms/164.png" alt=""></div>
+                            <div id="pct165d" class="imgpictocl"><img src="Pictograms/165.png" alt=""></div>
+                            <div id="pct166d" class="imgpictocl"><img src="Pictograms/166.png" alt=""></div>
+                            <div id="pct167d" class="imgpictocl"><img src="Pictograms/167.png" alt=""></div>
+                            <div id="pct168d" class="imgpictocl"><img src="Pictograms/168.png" alt=""></div>
+                            <div id="pct169d" class="imgpictocl"><img src="Pictograms/169.png" alt=""></div>
+                            <div id="pct170d" class="imgpictocl"><img src="Pictograms/170.png" alt=""></div>
+                            <div id="pct171d" class="imgpictocl"><img src="Pictograms/171.png" alt=""></div>
+                            <div id="pct172d" class="imgpictocl"><img src="Pictograms/172.png" alt=""></div>
+                            <div id="pct173d" class="imgpictocl"><img src="Pictograms/173.png" alt=""></div>
+                            <div id="pct174d" class="imgpictocl"><img src="Pictograms/174.png" alt=""></div>
+                            <div id="pct175d" class="imgpictocl"><img src="Pictograms/175.png" alt=""></div>
+                            <div id="pct176d" class="imgpictocl"><img src="Pictograms/176.png" alt=""></div>
+                            <div id="pct177d" class="imgpictocl"><img src="Pictograms/177.png" alt=""></div>
+                            <div id="pct178d" class="imgpictocl"><img src="Pictograms/178.png" alt=""></div>
+                            <div id="pct179d" class="imgpictocl"><img src="Pictograms/179.png" alt=""></div>
+                            <div id="pct180d" class="imgpictocl"><img src="Pictograms/180.png" alt=""></div>
+                            <div id="pct181d" class="imgpictocl"><img src="Pictograms/181.png" alt=""></div>
+                            <div id="pct182d" class="imgpictocl"><img src="Pictograms/182.png" alt=""></div>
+                            <div id="pct183d" class="imgpictocl"><img src="Pictograms/183.png" alt=""></div>
+                            <div id="pct184d" class="imgpictocl"><img src="Pictograms/184.png" alt=""></div>
+                            <div id="pct185d" class="imgpictocl"><img src="Pictograms/185.png" alt=""></div>
+                            <div id="pct186d" class="imgpictocl"><img src="Pictograms/186.png" alt=""></div>
+                            <div id="pct187d" class="imgpictocl"><img src="Pictograms/187.png" alt=""></div>
+                            <div id="pct188d" class="imgpictocl"><img src="Pictograms/188.png" alt=""></div>
+                            <div id="pct189d" class="imgpictocl"><img src="Pictograms/189.png" alt=""></div>
+                            <div id="pct190d" class="imgpictocl"><img src="Pictograms/190.png" alt=""></div>
+                            <div id="pct191d" class="imgpictocl"><img src="Pictograms/191.png" alt=""></div>
+                            <div id="pct192d" class="imgpictocl"><img src="Pictograms/192.png" alt=""></div>
+                            <div id="pct193d" class="imgpictocl"><img src="Pictograms/193.png" alt=""></div>
+                            <div id="pct194d" class="imgpictocl"><img src="Pictograms/194.png" alt=""></div>
+                            <div id="pct195d" class="imgpictocl"><img src="Pictograms/195.png" alt=""></div>
+                            <div id="pct196d" class="imgpictocl"><img src="Pictograms/196.png" alt=""></div>
+                            <div id="pct197d" class="imgpictocl"><img src="Pictograms/197.png" alt=""></div>
+                            <div id="pct198d" class="imgpictocl"><img src="Pictograms/198.png" alt=""></div>
+                            <div id="pct199d" class="imgpictocl"><img src="Pictograms/199.png" alt=""></div>
+                        </ul>
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section id="contado" class="contador">
+            <p id="contador"></p>
+
+        </section>
+
+
+        <section id="prvw" class="preview">
+            <div class="coach-container">
+                <!-- fondo -->
+                <div class="coach" style="background-image: url(img/Background.webp)">
+                </div>
+            </div>
+            <div class="coach2">
+                <img id="coachimg" onclick="start()" src="img/Coach.webp" alt="">
+            </div>  
+        </section> 
+
+
+        <section class="name" id="name">
+            <p>Last Friday Night (T.G.I.F.) - Katy Perry</p>
+        </section>
+
+
+    </section>
+
+
+</body>
+<script src="./JS/script.js"></script>
+<!-- <script src="animation.js"></script> -->
+</html>
