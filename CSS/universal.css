@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: "justdance";
-    src: url(https://github.com/angello934/jd/raw/main/font.otf);
+    src: url(https://angello934.github.io/jd/font.otf);
 }
 
 *{
@@ -18,7 +18,7 @@
 } */
 
 body{
-    cursor: url(https://github.com/angello934/jd/blob/main/cursor.png),auto;
+    cursor: url(https://angello934.github.io/jd/cursor.png),auto;
 }
 .container-vdo{
     position: relative;
