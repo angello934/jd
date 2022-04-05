@@ -1,0 +1,38 @@
+.pictograms div{
+    left: 53.5%;
+}
+
+
+
+@keyframes beatpicto{
+    90%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(97%) translateY(1.5%);
+    }
+    }
+
+
+
+.pictograms div img{
+    height: 100%;
+}
+
+    
+@keyframes pictoAnimate{
+    0%{
+        transform: translatex(130%);
+        bottom: 5.2vh;
+    }
+    88%{
+        transform: scale(100%);
+        opacity: 100%;
+        bottom: 5.2vh;
+        }
+    100%{
+        transform: scale(110%);
+        opacity: 0%;
+        bottom: 6.7vh;
+    }
+}

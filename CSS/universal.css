@@ -1,0 +1,371 @@
+/* general*/
+
+@font-face{
+    font-family: "justdance";
+    src: url(https://github.com/angello934/jd/raw/main/font.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* .contador p{
+    background-color: rgba(255, 255, 255, 0.315);
+} */
+
+body{
+    cursor: url(../cursor.png),auto;
+}
+.container-vdo{
+    position: relative;
+    height: 100vh;
+}
+
+.video-container-vdo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container-vdo video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.video-container-vdo img{
+    position: relative;
+    top: -50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.coach-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.coach-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.coach{
+    width: 100%;
+    /* margin-top: -14vh; */
+    height: 100vh;
+    /* background-image: url(../img/Background.png); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    /* border-radius: 2vh; */
+    border: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.coach2{
+    width: 100%;
+    /* background: linear-gradient(#00000000, #00000000 25%, var(--secundario-color)); */
+    height: 100vh;
+    border: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translatey(-100vh) translateX(0%);
+    animation: couchintro 1.5s;
+}
+
+@keyframes couchintro{
+    0%{
+        transform: translatey(-100vh) translatex(100%);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.coach2 img{
+    /* max-width: 400px; */
+    /* min-width: 400px; */
+    width: 55vh;
+    background-color: rgba(221, 30, 30, 0);
+    border: rgba(0, 0, 0, 0);
+    /* cursor: pointer; */
+    transition-property: max-width, width, min-width;
+    transition-duration: 0.25s;
+    /* animation: beatimg var(--BPS) infinite alternate; */
+}
+
+/* @keyframes couchintro{
+    0%{
+        transform: translatex(310%);
+        opacity: 0%;
+    }
+    100%{
+        bottom: 6.7vh;
+    }
+} */
+
+@keyframes beatimg{
+    0%{
+        filter: brightness(120%);
+    }
+    35%{
+        transform: translateY(-0.4%);
+    }
+
+    45%{
+        filter: brightness(100%);
+    }
+    100%{
+        transform: translateY(-0.6%);
+    }
+}
+
+
+.coach2 img:hover {
+    /* filter: drop-shadow(0px 0px 5px var(--Primario-color)); */
+    transition-duration: 0.25s;
+    width: 57vh;
+}
+
+.hidden{
+    opacity: 0%;
+    transition-duration: 0.25s;
+}
+
+.hidden .coach2, .hidden .coach{
+    /* margin-top: 200vh; */
+    transition-duration: 1s;
+}
+
+
+.hud-container-sct{
+    /* background-color: seagreen; */
+    opacity: 100%;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 26.39vh;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-delay: 1.75s;
+    /* background-color: rgba(133, 0, 0, 0.486); */
+}
+
+.hidden_hud{
+    z-index: -1;
+    opacity: 0%;
+}
+
+.contador{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.contador p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500px;
+    font-family: sans-serif;
+    font-style: rgba(0, 0, 0, 0);
+    /* background-color: rgba(255, 255, 255, 0.315); */
+    display: none;
+}
+
+
+.name{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    transform: translateY(-1180%);
+}
+.name p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 10vh;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-family: 'justdance';
+    color: rgb(255, 255, 255);
+    z-index: 50;
+    transition-duration: 0.25s;
+}
+
+
+
+
+
+
+
+/* .pictograms ul div{
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* animacion*/
+
+
+
+
+.pictograms{
+    position: relative;
+    overflow: hidden;
+}
+
+.pictograms div{
+    position: fixed;
+    height: 25%;
+    width: 30%;
+    transform: translateX(20000%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictograms div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(7px 3px 0px rgba(0, 0, 0, 0.247));
+}
+
+
+
+
+
+
+
+
+
+
+/* video*/
+
+
+@keyframes introvdo{
+    0%{
+        opacity: 100%;
+    }
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.playback{
+    z-index: -4;
+}
+
+.intro{
+    z-index: 0;
+}
+
+.outro{
+    z-index: 0;
+    opacity: 0%;
+}
+
+
+.gold-sect{
+    z-index: -1;
+    /* opacity: 50%; */
+    /* mix-blend-mode: screen; */
+}
+
+
+@keyframes outrovdo{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+/* .template{
+    position: relative;
+    top: -50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+} */
+
+
+
+.line{
+    position: fixed;
+    top: 94.77%;
+    height: 0.35vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.274);
+    /* background-color: rgb(255, 9, 9); */
+    box-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 0.158);
+    border-radius: 8px;
+}

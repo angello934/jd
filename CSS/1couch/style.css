@@ -1,0 +1,43 @@
+*{
+    --IZQUIERDA: 71.75%;
+    --ANCHO-LINEA: 8%;
+}
+.beat{
+    position: fixed;
+    bottom: 4.5%;
+
+    border-radius: 1000px;
+    /* background-color: blue; */
+    background-color: var(--Primario-color);
+    width: var(--ANCHO-LINEA);
+    left: var(--IZQUIERDA);
+    height: 0.96%;
+}
+
+@keyframes beat{
+    0%{
+        left: calc(var(--IZQUIERDA) - 0.5%);
+        width: calc(var(--ANCHO-LINEA) + 1%);
+    }
+}
+
+
+.line svg{
+    position: fixed;
+    bottom: 4.6%;
+    width: 1.5%;
+    height: 1.9%;
+    left: calc( ( var(--IZQUIERDA) + (var(--ANCHO-LINEA) / 2) ) - 0.75%);
+    fill: var(--Primario-color);
+}
+
+.line{
+    position: fixed;
+    top: 94.6%;
+    height: 0.4vh;
+    left: 81%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.274);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.205);
+    border-radius: 50%;
+}
